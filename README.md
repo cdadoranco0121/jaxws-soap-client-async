@@ -28,3 +28,9 @@ CREATE TABLE `cours` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 ```
+
+### Generate client class 
+```
+wsimport -keep -p fr.doranco.jaxws.webservice http://localhost:9991/ws/etudiant-service?wsdl -b binding.xml
+
+```
